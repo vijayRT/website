@@ -20,7 +20,8 @@ export default {
 	buildModules: [
 		'@nuxt/typescript-build',
 		'@nuxtjs/tailwindcss',
-		'@nuxtjs/composition-api'
+		'@nuxtjs/composition-api',
+		'nuxt-purgecss'
 	],
 	modules: [
 		['nuxt-fontawesome', {
@@ -33,5 +34,11 @@ export default {
 			]
 		}]
 	],
-	build: {}
+	build: {},
+	postcss: {
+		plugins: [
+			require('autoprefixer'),
+			require('tailwindcss')
+		]
+	}
 }
