@@ -1,11 +1,8 @@
 <template>
 	<div class="view flex-col">
-		<div class="flex-1">
-			<span class="text-4xl ml-16">Skills</span>
-		</div>
 		<div class="flex flex-5 flex-wrap px-4 lg:px-32">
-			<div v-for="section in sections" :key="section.title" class="flex flex-basis-3 flex-col">
-				<span class="text-3xl">{{ section.title }}</span>
+			<div v-for="section in sections" :key="section.title" class="flex flex-basis-1 lg:flex-basis-3 flex-col">
+				<span class="text-xl lg:text-3xl">{{ section.title }}</span>
 				<div class="flex flex-row flex-wrap py-12 lg:space-x-16 items-baseline justify-start">
 					<Skill v-for="skill in section.list" :key="skill.name" :skill-name="skill.name" :skill-icon="skill.icon" />
 				</div>

@@ -19,7 +19,7 @@ export default Vue.extend({
 
 <style lang="postcss" scoped>
 #app {
-	@apply flex flex-col h-screen bg-gray-900;
+	@apply flex min-h-screen flex-col bg-gray-900;
 	background-image: url('../assets/random-grey-variations.png');
 	background-repeat: repeat;
 }
