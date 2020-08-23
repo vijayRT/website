@@ -33,11 +33,5 @@ export default {
 			]
 		}]
 	],
-	build: {},
-	postcss: {
-		plugins: [
-			require('autoprefixer'),
-			require('@nuxtjs/tailwindcss')
-		]
-	}
+	build: {}
 }

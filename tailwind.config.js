@@ -1,16 +1,12 @@
 module.exports = {
 	purge: {
 		enabled: process.env.IS_PROD === 'production',
-		options: {
-			whitelistPatterns: [
-				/-(leave|enter|appear)(|-(to|from|active))$/,
-				/^(?!(|.*?:)cursor-move).+-move$/,
-				/^router-link(|-exact)-active$/
-			]
-		},
 		content: [
-			'./public/**/*.html',
-			'./src/**/*.vue'
+			'components/**/*.vue',
+			'layouts/**/*.vue',
+			'pages/**/*.vue',
+			'plugins/**/*.js',
+			'nuxt.config.js'
 		]
 	},
 	target: 'relaxed',
